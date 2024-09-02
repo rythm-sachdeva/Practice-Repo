@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Apple</title>
 </head>
 <body>
     <header>
         <dialog open>
-          <p>
-            Choose another country or region to see content specific to your location <br>and shop online.
-          </p>
-          <form method="dialog">
-            <select>
-                <option>India</option>
-                <option>Other Country or Region</option>
-              </select>
-              <button>Continue</button>
-              <button type="submit">X</button>
-          </form>
+          <section class="dialog-main">
+            <p>
+              Choose another country or region to see content specific to your location and<br> shop online.
+            </p>
+            <form method="dialog">
+              <select>
+                  <option>India</option>
+                  <option>Other Country or Region</option>
+                </select>
+                <button class="button">Continue</button>
+                <button type="submit">X</button>
+            </form>
+    
+          </section>
         </dialog>
-        <nav>
-            <img src="./logos/apple-logo.png" alt="">
-            <ul>
+        <nav class="navbar">
+            <img class="logo" src="./logos/apple-logo.png" alt="apple-logo">
+            <ul class="nav-items">
               <li><a href="">Store</a></li>
               <li><a href="">Mac</a></li>
               <li><a href="">iPod</a></li>
@@ -31,15 +35,17 @@
               <li><a href="">iTunes</a></li>
               <li><a href="">Support</a></li>
             </ul>
-            <img src="images/search-icon.svg" alt="">
-            <img src="images/cart-icon.svg" alt="">
+            <div class="nav-icons">
+              <img src="images/search-icon.svg" alt="search-icon">
+              <img src="images/cart-icon.svg" alt="cart-icon">
+            </div>
         </nav>
     </header>
 
     <main>
-      <section>
-        <img src="images/hero-img.png" alt="">
-      <button>Shop</button>
+      <section class="hero">
+        <img class="hero-img" src="images/hero-img.png" alt="">
+      <button class="outline-blue-button">Shop</button>
       </section>
       <section>
         <h1>Macbook Air</h1>
